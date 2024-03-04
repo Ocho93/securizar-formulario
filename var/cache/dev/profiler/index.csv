@@ -364,3 +364,7 @@ a27bc3,127.0.0.1,POST,https://127.0.0.1:8000/apichecktoken,1709466400,,404,reque
 b1ccd9,127.0.0.1,GET,https://127.0.0.1:8000/user/,1709541777,,200,request
 bd5181,127.0.0.1,GET,https://127.0.0.1:8000/register,1709541790,,200,request
 e5c6ec,127.0.0.1,GET,https://127.0.0.1:8000/apicheck,1709541800,,401,request
+6a56c9,127.0.0.1,GET,https://127.0.0.1:8000/,1709544664,,404,request
+4aef99,127.0.0.1,GET,https://127.0.0.1:8000/login,1709544670,,200,request
+3cc287,127.0.0.1,GET,https://127.0.0.1:8000/user/,1709544677,,200,request
+dedc74,127.0.0.1,GET,https://127.0.0.1:8000/register,1709544683,,200,request
