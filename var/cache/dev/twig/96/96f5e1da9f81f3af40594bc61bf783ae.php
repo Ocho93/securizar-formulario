@@ -53,22 +53,26 @@ class __TwigTemplate_8b8a76b5d3cc38ce5c82e69ea6e5bc2d extends Template
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\">
+        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN\" crossorigin=\"anonymous\">
+        
         ";
-        // line 7
-        $this->displayBlock('stylesheets', $context, $blocks);
         // line 9
+        $this->displayBlock('stylesheets', $context, $blocks);
+        // line 11
         echo "
         ";
-        // line 10
-        $this->displayBlock('javascripts', $context, $blocks);
         // line 12
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 14
         echo "    </head>
     <body>
-        ";
-        // line 14
+        <div class=\"container mt-2 p-3 pt-5 p-md-5\">
+            ";
+        // line 17
         $this->displayBlock('body', $context, $blocks);
-        // line 15
-        echo "    </body>
+        // line 18
+        echo "        </div>
+    </body>
 </html>
 ";
         
@@ -98,7 +102,7 @@ class __TwigTemplate_8b8a76b5d3cc38ce5c82e69ea6e5bc2d extends Template
 
     }
 
-    // line 7
+    // line 9
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -108,7 +112,7 @@ class __TwigTemplate_8b8a76b5d3cc38ce5c82e69ea6e5bc2d extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 8
+        // line 10
         echo "        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -118,7 +122,7 @@ class __TwigTemplate_8b8a76b5d3cc38ce5c82e69ea6e5bc2d extends Template
 
     }
 
-    // line 10
+    // line 12
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -128,7 +132,7 @@ class __TwigTemplate_8b8a76b5d3cc38ce5c82e69ea6e5bc2d extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 11
+        // line 13
         echo "        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -138,7 +142,7 @@ class __TwigTemplate_8b8a76b5d3cc38ce5c82e69ea6e5bc2d extends Template
 
     }
 
-    // line 14
+    // line 17
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -169,7 +173,7 @@ class __TwigTemplate_8b8a76b5d3cc38ce5c82e69ea6e5bc2d extends Template
      */
     public function getDebugInfo()
     {
-        return array (  142 => 14,  132 => 11,  122 => 10,  112 => 8,  102 => 7,  83 => 5,  71 => 15,  69 => 14,  65 => 12,  63 => 10,  60 => 9,  58 => 7,  53 => 5,  47 => 1,);
+        return array (  146 => 17,  136 => 13,  126 => 12,  116 => 10,  106 => 9,  87 => 5,  74 => 18,  72 => 17,  67 => 14,  65 => 12,  62 => 11,  60 => 9,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -180,6 +184,8 @@ class __TwigTemplate_8b8a76b5d3cc38ce5c82e69ea6e5bc2d extends Template
         <meta charset=\"UTF-8\">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\">
+        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN\" crossorigin=\"anonymous\">
+        
         {% block stylesheets %}
         {% endblock %}
 
@@ -187,7 +193,9 @@ class __TwigTemplate_8b8a76b5d3cc38ce5c82e69ea6e5bc2d extends Template
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <div class=\"container mt-2 p-3 pt-5 p-md-5\">
+            {% block body %}{% endblock %}
+        </div>
     </body>
 </html>
 ", "base.html.twig", "C:\\Users\\Yo\\OneDrive\\Documentos\\Bootcamp\\BACKEND\\SYMFONY\\LOGIN-back\\templates\\base.html.twig");
