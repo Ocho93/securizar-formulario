@@ -5,3 +5,7 @@ c6ede1,127.0.0.1,GET,https://127.0.0.1:8000/,1709625420,,404,request
 8cf11f,127.0.0.1,GET,https://127.0.0.1:8000/user/,1709625444,,200,request
 5ef716,127.0.0.1,GET,https://127.0.0.1:8000/login,1709625462,,200,request
 66f4d0,127.0.0.1,GET,https://127.0.0.1:8000/register,1709625474,,200,request
+67d451,127.0.0.1,GET,https://127.0.0.1:8000/,1709628932,,404,request
+9836ac,127.0.0.1,GET,https://127.0.0.1:8000/login,1709628938,,200,request
+599e13,127.0.0.1,GET,https://127.0.0.1:8000/reset-password,1709628942,,200,request
+9a35f1,127.0.0.1,GET,https://127.0.0.1:8000/reset-password,1709629294,,200,request

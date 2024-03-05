@@ -128,6 +128,10 @@ class __TwigTemplate_e65d6422f4ea4d76651aceac3c9696b0 extends Template
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\"
     >
+    <a href=\"";
+        // line 26
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_forgot_password_request");
+        echo "\">¿Olvidaste la contraseña?</a>
 
     <button class=\"btn btn-lg btn-primary\" type=\"submit\">
         Sign in
@@ -163,7 +167,7 @@ class __TwigTemplate_e65d6422f4ea4d76651aceac3c9696b0 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  128 => 24,  120 => 19,  115 => 16,  107 => 13,  104 => 12,  102 => 11,  99 => 10,  93 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  133 => 26,  128 => 24,  120 => 19,  115 => 16,  107 => 13,  104 => 12,  102 => 11,  99 => 10,  93 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -193,6 +197,7 @@ class __TwigTemplate_e65d6422f4ea4d76651aceac3c9696b0 extends Template
     <input type=\"hidden\" name=\"_csrf_token\"
            value=\"{{ csrf_token('authenticate') }}\"
     >
+    <a href=\"{{ path('app_forgot_password_request') }}\">¿Olvidaste la contraseña?</a>
 
     <button class=\"btn btn-lg btn-primary\" type=\"submit\">
         Sign in
