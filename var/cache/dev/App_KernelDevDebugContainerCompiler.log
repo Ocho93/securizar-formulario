@@ -154,6 +154,7 @@ Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "Symfony\Contracts\Cache\CacheInterface"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "Symfony\Contracts\Cache\TagAwareCacheInterface"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "Symfony\Component\Asset\Packages"; reason: private alias.
+Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "Symfony\Contracts\HttpClient\HttpClientInterface"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "mailer"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "Symfony\Component\Mailer\MailerInterface"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "Symfony\Component\Mailer\Transport\TransportInterface"; reason: private alias.
@@ -366,6 +367,8 @@ Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "api_platform.metadata.property.metadata_factory.yaml.inner"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "api_platform.metadata.property.metadata_factory.validator.inner"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "api_platform.json_schema.metadata.property.metadata_factory.schema.inner"; reason: private alias.
+Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "http_client"; reason: private alias.
+Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service ".debug.http_client.inner"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "controller_resolver"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "argument_resolver"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "serializer"; reason: private alias.
@@ -499,6 +502,7 @@ Symfony\Component\DependencyInjection\Compiler\RemoveAbstractDefinitionsPass: Re
 Symfony\Component\DependencyInjection\Compiler\RemoveAbstractDefinitionsPass: Removed service "assets.url_package"; reason: abstract.
 Symfony\Component\DependencyInjection\Compiler\RemoveAbstractDefinitionsPass: Removed service "assets.static_version_strategy"; reason: abstract.
 Symfony\Component\DependencyInjection\Compiler\RemoveAbstractDefinitionsPass: Removed service "assets.json_manifest_version_strategy"; reason: abstract.
+Symfony\Component\DependencyInjection\Compiler\RemoveAbstractDefinitionsPass: Removed service "http_client.abstract_retry_strategy"; reason: abstract.
 Symfony\Component\DependencyInjection\Compiler\RemoveAbstractDefinitionsPass: Removed service "mailer.transport_factory.abstract"; reason: abstract.
 Symfony\Component\DependencyInjection\Compiler\RemoveAbstractDefinitionsPass: Removed service "Symfony\Component\Validator\Constraints\ExpressionLanguageSyntaxValidator"; reason: abstract.
 Symfony\Component\DependencyInjection\Compiler\RemoveAbstractDefinitionsPass: Removed service "Symfony\Component\Validator\Constraints\AllValidator"; reason: abstract.
@@ -662,6 +666,9 @@ Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Remo
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "console.messenger.application"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "console.messenger.execute_command_handler"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "assets.empty_package"; reason: unused.
+Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "http_client.uri_template_expander.guzzle"; reason: unused.
+Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "http_client.uri_template_expander.rize"; reason: unused.
+Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "http_client.messenger.ping_webhook_handler"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "mailer.default_transport"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "mailer.messenger.message_handler"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "serializer.mapping.cache.symfony"; reason: unused.
@@ -797,6 +804,7 @@ Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inl
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "assets._default_package" to "assets.packages".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "assets.empty_version_strategy" to "assets._default_package".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "assets.context" to "assets._default_package".
+Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "http_client.uri_template.inner" to "http_client.uri_template".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "mailer.transport_factory" to "mailer.transports".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "debug.controller_resolver.inner" to "debug.controller_resolver".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "debug.argument_resolver.inner" to "debug.argument_resolver".
@@ -846,6 +854,7 @@ Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inl
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "data_collector.events" to "profiler".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "data_collector.security" to "profiler".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "data_collector.twig" to "profiler".
+Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "data_collector.http_client" to "profiler".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "data_collector.doctrine" to "profiler".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "mailer.data_collector" to "profiler".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "data_collector.config" to "profiler".
@@ -1053,6 +1062,7 @@ Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inl
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "argument_resolver.variadic" to ".debug.value_resolver.argument_resolver.variadic".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "argument_resolver.not_tagged_controller" to ".debug.value_resolver.argument_resolver.not_tagged_controller".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "argument_resolver.query_parameter_value_resolver" to ".debug.value_resolver.argument_resolver.query_parameter_value_resolver".
+Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "http_client.uri_template" to ".debug.http_client".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".doctrine.orm.default_metadata_driver.inner" to ".doctrine.orm.default_metadata_driver".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".service_locator.KLVvNIq" to ".doctrine.orm.default_metadata_driver".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "security.access.authenticated_voter" to ".debug.security.voter.security.access.authenticated_voter".
@@ -1140,4 +1150,4 @@ Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inl
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "api_platform.doctrine.orm.metadata.resource.link_factory" to "api_platform.metadata.resource.metadata_collection_factory.cached".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "serializer.mapping.class_discriminator_resolver" to "debug.serializer".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "serializer.mapping.class_discriminator_resolver" to "debug.serializer".
-Symfony\Bundle\FrameworkBundle\DependencyInjection\Compiler\UnusedTagsPass: Tag "container.decorator" was defined on service(s) "debug.validator", "debug.serializer", "doctrine.migrations.container_aware_migrations_factory", "debug.security.access.decision_manager", "debug.security.firewall.authenticator.login", "debug.security.firewall.authenticator.api", "debug.security.firewall.authenticator.main", "api_platform.serializer.context_builder.filter", "api_platform.serializer.mapping.class_metadata_factory", "api_platform.json_schema.backward_compatible_schema_factory", "lexik_jwt_authentication.api_platform.openapi.factory", "debug.security.event_dispatcher.login", "debug.security.event_dispatcher.api", "debug.security.event_dispatcher.main", "event_dispatcher", but was never used.
+Symfony\Bundle\FrameworkBundle\DependencyInjection\Compiler\UnusedTagsPass: Tag "container.decorator" was defined on service(s) "debug.validator", "debug.serializer", "doctrine.migrations.container_aware_migrations_factory", "debug.security.access.decision_manager", "debug.security.firewall.authenticator.login", "debug.security.firewall.authenticator.api", "debug.security.firewall.authenticator.main", "api_platform.serializer.context_builder.filter", "api_platform.serializer.mapping.class_metadata_factory", "api_platform.json_schema.backward_compatible_schema_factory", "lexik_jwt_authentication.api_platform.openapi.factory", ".debug.http_client", "debug.security.event_dispatcher.login", "debug.security.event_dispatcher.api", "debug.security.event_dispatcher.main", "event_dispatcher", but was never used.

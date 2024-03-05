@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '9890cba6a2c218edce7817b8070f49ebce5f1caa',
+        'reference' => '07d14cdaa267ed12c5caf89bfe36be662c3579a0',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '9890cba6a2c218edce7817b8070f49ebce5f1caa',
+            'reference' => '07d14cdaa267ed12c5caf89bfe36be662c3579a0',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -253,6 +253,18 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
+        'php-http/async-client-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '*',
+            ),
+        ),
+        'php-http/client-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '*',
+            ),
+        ),
         'phpdocumentor/reflection-common' => array(
             'pretty_version' => '2.2.0',
             'version' => '2.2.0.0',
@@ -398,6 +410,12 @@
             'dev_requirement' => false,
         ),
         'psr/event-dispatcher-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0',
+            ),
+        ),
+        'psr/http-client-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
                 0 => '1.0',
@@ -792,6 +810,30 @@
             'install_path' => __DIR__ . '/../symfony/framework-bundle',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'symfony/http-client' => array(
+            'pretty_version' => 'v6.4.5',
+            'version' => '6.4.5.0',
+            'reference' => 'f3c86a60a3615f466333a11fd42010d4382a82c7',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/http-client',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'symfony/http-client-contracts' => array(
+            'pretty_version' => 'v3.4.0',
+            'version' => '3.4.0.0',
+            'reference' => '1ee70e699b41909c209a0c930f11034b93578654',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/http-client-contracts',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'symfony/http-client-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '3.0',
+            ),
         ),
         'symfony/http-foundation' => array(
             'pretty_version' => 'v6.4.4',
